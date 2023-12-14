@@ -1,0 +1,34 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import {BrowserRouter} from 'react-router-dom';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+    <App />
+    </BrowserRouter>
+  </React.StrictMode>
+
+  we can also use HashRouter but should not 99% of the time
+  import {HashRouter} from 'react-router-dom';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <HashRouter>
+    <App />
+    </HashRouter>
+  </React.StrictMode>
+
+  we can also use MemoryRouter as it is used to store the route in the memory of the browser and is useful for testing
+  import {MemoryRouter} from 'react-router-dom';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <MemoryRouter>
+    <App />
+    </MemoryRouter>
+  </React.StrictMode>
